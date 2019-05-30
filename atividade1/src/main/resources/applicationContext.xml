@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+
+    <bean id="placa"
+        class="br.gov.sp.fatec.Print">
+        <property name="info" ref="aluno1"/>
+    </bean>
+    <bean id="aluno1"
+        class="br.gov.sp.fatec.Aluno">
+        <property name="nome" value="Cesar Ando"/>
+        <property name="RA" value="1460152813090"/>
+        <property name="curso" value="ADS"/>
+    </bean>
+    <bean id="aluno2"
+        class="br.gov.sp.fatec.Aluno">
+        <property name="nome" value="Giovani"/>
+        <property name="RA" value="14627436287080"/>
+        <property name="curso" value="LOG"/>
+    </bean>
+    <bean id="aluno3"
+        class="br.gov.sp.fatec.Aluno">
+        <property name="nome" value="Bárbara Araújo"/>
+        <property name="RA" value="1460129839190"/>
+        <property name="curso" value="BD"/>
+    </bean>
+</beans>
